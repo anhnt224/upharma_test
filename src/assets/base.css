@@ -1,0 +1,33 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --color-background: #ffffff;
+  --color-text: #000000;
+
+  --d-max-width: 1200px;
+  --d-bp-mobile: 46.1875em;
+  --d-bp-tablet: 63.9375em;
+  --d-bp-pc: 64rem
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body, html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  background-color: var(--color-background);
+}
+
+.items-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
