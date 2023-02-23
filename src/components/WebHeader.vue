@@ -16,7 +16,7 @@
         <div class="header-search__btn items-center">
           <font-awesome-icon
             icon="search"
-            size="3x"
+            size="lg"
             :style="{ color: '#fff' }"
           />
         </div>
@@ -32,9 +32,10 @@
           <div class="menu-item__icon items-center">
             <font-awesome-icon
               icon="phone"
-              size="5x"
+              size="2xl"
               :style="{
                 color: 'white',
+                width: '40px',
               }"
             />
           </div>
@@ -48,7 +49,7 @@
           <div class="menu-item__icon items-center">
             <font-awesome-icon
               icon="clock-rotate-left"
-              size="5x"
+              size="2xl"
               :style="{
                 color: 'white',
               }"
@@ -147,22 +148,23 @@ export default {
 
 .menu-item {
   display: flex;
+  align-items: center;
+  padding: 4px 4px;
+  border-radius: 4px;
 }
-.menu-item__icon {
-  width: 40px;
-  height: 40px;
+.menu-item:active {
+  background: $white100;
 }
 .menu-item__content {
-  margin-left: 8px;
+  margin-left: 12px;
 }
 .menu-item__title {
-  font-size: 1.2rem;
+  font-size: 12px;
   color: white;
-  font-weight: 400;
+  margin-bottom: 0px;
 }
 .menu-item__sub-title {
-  font-size: 1.6rem;
-  margin-top: 4px;
+  font-size: 16px;
   color: white;
   font-weight: 600;
 }
@@ -209,7 +211,7 @@ export default {
   border-style: none;
   padding: 8px 0px;
   background-color: transparent;
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 .header-search__input:focus {
   border: none;
